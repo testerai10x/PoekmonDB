@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 
-import mainPage from './integration/MainPage'
+import mainAPIPage from './integration/MainAPIPage.js'
 
 const URL = 'https://unite-db.com/'
 
@@ -16,18 +16,22 @@ describe('PokemonDB Automation API', () => {
 
   it('Main page initial URL test', () => {
 
-    mainPage.URLValidation()
+    mainAPIPage.URLValidation()
     
 
   })
 
   it('API Load test via XHR', () =>{
 
-    mainPage.APILoadValidation()
+    mainAPIPage.APILoadValidation()
 
   })
 
 })
+
+
+
+
 
 
 
