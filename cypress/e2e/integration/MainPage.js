@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-class MainPage {
+class MainAPIPage {
     
     URLValidation(){
         cy.title().should('eq', 'Pokémon UNITE Wiki, Builds, Emblems, Tier List, Patch Notes')
@@ -26,6 +26,6 @@ class MainPage {
 
 }
 
-export default new MainPage()
+export default new MainAPIPage()
 
 
