@@ -2,6 +2,7 @@
 
 
 import mainAPIPage from './integration/MainAPIPage.js'
+import landingPage from './integration/LandingPage.js'
 
 const URL = 'https://unite-db.com/'
 
@@ -29,7 +30,22 @@ describe('PokemonDB Automation API', () => {
 
 })
 
+describe('PokemonDB Automation UI', () => {
 
+  beforeEach(function(){
+
+    cy.visit(URL)
+
+  })
+
+  it('Main page functional test', () => {
+
+    landingPage.LandingFunctionality()
+    
+
+  })
+
+})
 
 
 
