@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 //test a change
-//test changce
+//test change
 
 
 import mainAPIPage from './integration/MainAPIPage.js'
